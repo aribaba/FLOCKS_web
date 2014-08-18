@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+a {
+	list-style-type: none;
+	color: #333;
+}
+
+a:hover {
+	color: #333;
+}
+
+ul {
+	list-style: none;
+}
+
+html{
+	overflow-y: scroll;
+}
+
+p {
+	margin: 0.5em 0 1.2em;
+}
+
+body {
+	font-family:'Lucida Grande',
+ 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',
+ Meiryo, メイリオ, sans-serif;
+ font-size: 100%;
+ line-height: 100%;
+ color: #333;
+ margin: 0; padding: 0;
+
+}
+
+#page-body {
+	background: #f8f8f8;
+}
+
+#wrap {
+
+	line-height: 100%;
+	font-size: 20px;
+	width: 100%;
+	min-width: 1263px;
+}
+
+.box-shadow {
+
+-webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+
+.fade-black:hover {
+	filter: brightness(0.6);
+	-webkit-filter: brightness(0.6);
+	-moz-filter: brightness(0.6);
+	-o-filter: brightness(0.6);
+	-ms-filter: brightness(0.6);
+	/* 暗め */
+
+}
+
+.fade-black-2:hover {
+	filter: brightness(0.8);
+	-webkit-filter: brightness(0.8);
+	-moz-filter: brightness(0.8);
+	-o-filter: brightness(0.8);
+	-ms-filter: brightness(0.8);
+	/* 明るめ */
+}
+
+
+
+.fade {
+    -webkit-transition: 0.6s ease;
+       -moz-transition: 0.6s ease;
+         -o-transition: 0.6s ease;
+            transition: 0.6s ease;
+}
+
+.fade:hover {
+    -webkit-transition: 0.6s ease;
+       -moz-transition: 0.6s ease;
+         -o-transition: 0.6s ease;
+            transition: 0.6s ease;
+}
+
+
+.mans {
+	background: #428abd;
+}
+
+.boys {
+	background: #ffbe00;
+}
+
+.ladys {
+	background: #f05187;
+}
+
+.web {
+	background: #7aa821;
+}
+
+.girls {
+	background: #f75410;
+
+}
+
+.moe {
+	background: #ff9c8c;
+}
+
+.manager-room {
+	background: #2c4f54;
+}
+
+
+.clear-fix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+article:after {
+	clear: both;
+}
+
+
+
+.twitter-follow-button {
+	margin-left: 10px;
+}
+
+#not-article {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+
+#member-archive .users {
+	width: 763px;
+	margin: 0 auto;
+	background: #fff;
+
+
+
+}
+
+#member-archive .users li {
+	list-style-type: none;
+	height: 200px;
+	width: 148px;
+	float: left;
+	border: 1px solid #eee;
+	padding: 25px 20.38px 30px;
+	background: #fff;
+
+
+}
+
+.userposts {
+	display: block;
+	   -webkit-transition: 0.6s ease;
+       -moz-transition: 0.6s ease;
+         -o-transition: 0.6s ease;
+            transition: 0.6s ease;
+}
+
+
+.fade_black_member:hover {
+	filter: brightness(0.8);
+	-webkit-filter: brightness(0.8);
+	-moz-filter: brightness(0.8);
+	-o-filter: brightness(0.8);
+	-ms-filter: brightness(0.8);
+
+}
+
+.users .nickname {
+	font-size: 15px;
+
+}
+.users dl {
+	box-shadow: none;
+	margin-top: 25px;
+text-align: center;
+
+}
+
+.users dt {
+	font-weight: bold;
+}
+
+.users dd {
+	font-size: 14px;
+}
+
+.author-link a {
+	font-size: 16px;
+	color: #0F3EBA;
+}
+
+.author-link a:hover{
+			border-bottom: 1px solid #50c2dc;
+}
+
+.author-avatar {
+	display: block;
+	width: 150px;
+	height: 150px;
+}
+
+#balloon-3-top-right:after {
+	content: "";
+	position: absolute;
+	top: -15px; right: 0;
+	margin-left: 0;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 15px 0 0 20px;
+	border-color: transparent transparent transparent #19283C;
+	z-index: -1;
+}
+
+.noposts {
+	font-size: 15px;
+}
+
+#member-archive p{
+	font-size: 15px;
+	font-weight: normal;
+
+}
+
+.rist-menu {
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0px auto 20px;
+	-webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.rist-menu li {
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+.rist-menu li:last-child {
+	border-bottom: 0px;
+}
+
+.rist-menu li a {
+	display: inline-block;
+	position: relative;
+	z-index: 10;
+	height: 40px;
+	margin: 0;
+	padding: 0 10px 0 50px;
+	background: #fff;
+	color: #222;
+	font-size: 15px;
+	line-height: 40px;
+	font-weight: bold;
+	text-decoration: none;
+	min-width: 11em;
+}
+
+.rist-menu li:hover {
+	background: #ddd;
+}
+
+.rist-menu li a:before {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	width: 8px;
+	height: 8px;
+	margin-top: -4px;
+	border-radius: 50%;
+	background: #428abd;
+	transition: .2s ;
+}
+
+.rist-menu .current-cat a:before {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	width: 8px;
+	height: 8px;
+	margin-top: -4px;
+	border-radius: 50%;
+	background: #fff;
+	transition: .2s ;
+}
+
+li a:hover:before {
+	left: -16px;
+	width: 50px;
+	height: 50px;
+	margin-top: -25px;
+}
+
+.current-cat a:hover:before {
+	left: -16px;
+	width: 50px;
+	height: 50px;
+	margin-top: -25px;
+}
+
+.wpp-list {
+	margin-bottom: 20px;
+}
+
+
+
+
+#metaslider_container_147 {
+	overflow: hidden;
+}
+
+/* the reaction buttons region */
+div.reaction_buttons{
+    margin: 20px auto;
+    font-size: 0.8em;
+    width: 330px;
+
+}
+
+
+
+
+#sidebar div.widget_reaction_buttons h3 {
+	margin: 0;
+	margin-top: 4px;
+	font-size: 1.1em;
+}
+
+#sidebar div.widget_reaction_buttons ol {
+	margin-left: 25px;
+}
+
+
+.contents-foot {
+	margin: 20px 0 20px 20px;
+}
+
+.contents-foot .social-buttons {
+	list-style: none;
+	margin : 5px auto;
+	overflow: hidden;
+	width: 95%;
+}
+
+.contents-foot .social-buttons li {
+	padding-right: 20px;
+	float: left;
+	width: 30%;
+}
+
+/* ページャー */
+
+
+.wp-pagenavi {
+	margin: 20px;
+	padding: 15px;
+}
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: #ddd;
+}
+.wp-pagenavi span.current {
+	font-size: 15px;
+}
+/* ページャー終わり */
+
+/* カテゴリーリボン */
+
+#balloon-3-top-right {
+	position: absolute;
+	display: inline-block;
+	padding: 2px 20px;
+	min-width: 80px;
+	height: 30px;
+	color: #F6F6F6;
+	line-height: 33px;
+	text-align: center;
+	z-index: 0;
+	right: -20px;
+	bottom: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	opacity: 0.8;
+}
+#balloon-3-top-right:after {
+	content: "";
+	position: absolute;
+	top: -15px; right: 0;
+	margin-left: 0;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 15px 0 0 20px;
+	border-color: transparent transparent transparent #224;
+	z-index: -1;
+}
+
+
+
+
+/* カテゴリーリボンカラー終わり */
+
+
+
+
+
+.top-user-thumbnail img {
+	border-radius: 40px;
+	margin-right: 5px;
+}
+

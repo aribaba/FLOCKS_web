@@ -1,0 +1,169 @@
+@charset "utf-8";
+#flocks-page-body {
+	background-image: url(http://aribaba845.sakura.ne.jp/aribaba_book/wp-content/uploads/2014/06/2fb7acc6a037b734703e9f94aa2f7cb2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+
+
+
+}
+
+
+#contents-body-flocks {
+
+	height: 100%;
+
+}
+
+#contents-body-flocks #about-logo {
+	margin: 250px auto ;
+	width: 420px;
+	display: block;
+
+}
+
+.section-all {
+	padding: 100px 0 ;
+	background: #eee;
+	margin-bottom: 150px;
+}
+
+.section-2 {
+
+}
+
+.centered-wrapper {
+	padding: 10px 50px;
+}
+
+.section-1 .centered-wrapper h2 {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.section-1 .centered-wrapper p {
+	font-size: 18px;
+	text-align: center;
+	width: 1000px;
+	margin: 0 auto 10px;
+
+}
+
+
+.section-3 .centered-wrapper p {
+	font-size: 18px;
+	text-align: center;
+	width: 1000px;
+	margin: 0 auto 10px;
+}
+
+.section-2 .columns li{
+	list-style: none;
+
+}
+
+
+.section-2 .columns {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.section-2 .columns .column-all {
+	display: inline-block;
+	width: 300px;
+	vertical-align: top;
+}
+
+.section-2 .columns .column-1 .column-icon {
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.section-2 .columns .column-2 .column-icon {
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.section-2 .columns .column-2 .column-icon img {
+	margin-top: 18px;
+}
+
+
+.section-2 .columns .column-3 .column-icon {
+	margin: 0 auto;
+	width: 50px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+.section-2 .columns .column-all .column-title {
+
+	font-weight: bold;
+	text-align: center;
+}
+
+.section-2 .columns .column-all .column-title p {
+	font-size: 15px;
+}
+
+.section-2 .columns .column-all .column-text  p{
+	font-size: 12px;
+
+}
+
+
+.section-2 .columns .column-1 {
+	margin-right: 45px;
+}
+.section-2 .columns .column-3 {
+	margin-left: 45px;
+}
+
+#go-home {
+	height: 80px;
+	background: #428abd;
+	width: 300px;
+	border-radius: 40px;
+	margin: -70px auto 100px;
+	transition: 0.2s ease;
+
+}
+#go-home a {
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	padding: 20px 0;
+	transition: 0.2s ease;
+
+}
+
+#go-home a:hover {
+	color: #fff;
+	font-size: 37px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 60px;
+	display: block;
+	padding: 30px 0;
+	transition: 0.2s ease;
+
+
+}
+
+#go-home:hover {
+	height: 120px;
+	background: #428abd;
+	width: 450px;
+	border-radius: 60px;
+	margin: -70px auto 100px;
+	transition: 0.2s ease;
+}
