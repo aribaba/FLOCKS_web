@@ -54,7 +54,7 @@
 	</ul>
 
 </div>
-<!-- <div id="next"></div> -->
+
 </div>
 <!--feature end -->
 
