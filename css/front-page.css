@@ -4,21 +4,51 @@
 .entry {
 	position: relative;
 	background-color: #fff;
-width: 97%;
-margin: 0 auto;
+	width: 97%;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
 
-.entry a {
+.entry .entry_1 {
 	color: #000;
 	background: #fff;
 	display: block;
 	text-decoration: none;
-	padding: 5px 30px 5px 10px;
+	padding: 5px 10px 5px 10px;
 	height: 190px;
+	position: relative;
+	overflow: hidden;
 }
-.entry:hover {
-	background: #ecebeb;
+
+.entry .entry_2 {
+	position: absolute;
+	top: 0;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+	transition: opacity 0.6s, transform 0.6s;
+	opacity: 0;
+	margin-left: 220px;
+	background: #222;
+	height: 180px;
+	padding: 10px 0;
+
+
+}
+
+.entry .entry_2 p {
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.entry:hover .entry_2 {
+	opacity: 0.9;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+
 }
 
 .entry-figure {
@@ -26,7 +56,6 @@ margin: 0 auto;
 	width: 210px;
 	height: 190px;
 	text-align: center;
-	margin-right: 10px;
 
 }
 
@@ -41,56 +70,84 @@ margin-top: 5px;
 }
 
 .entry .title {
-	width: 464px;
-	float: left;
-}
-
-
-.entry .entry-title {
+	width: 500px;
 	float: left;
 	padding-top: 15px;
-	font-size: 13px;
 }
+
 
 
 .entry .box-time {
-
-	margin: 0 0 10px 0;
 	overflow: hidden;
+	margin-right: 10px;
 
 }
 
 .entry .box-time time {
 	font-size: 18px;
 	display: block;
-	margin: 5px 15px 0 0;
 	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .entry .box-time {
 	font-size: 30px;
-	display: block;
-
+	display: inline-block;
 	font-weight: bold;
-	position: absolute;
-	bottom: 5px;
-	left: 230px;
+	height: 30px;
+	line-height: 30px;
+}
+
+
+.entry .entry_author_area {
+	display: inline-block;
+	height: 30px;
+	vertical-align: top;
+}
+
+.entry .author-vcard {
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 30px;
+}
+
+.entry .entry_author_thumbnail {
+	height: 30px;
+	display: inline-block;
+	vertical-align: top;
+
 }
 
 .entry .sns-counts-num {
 	list-style: none;
-	position: absolute;
-bottom: 15px;
-left: 410px;
-
+	margin-top: 10px;
 }
 
 .entry .sns-counts-num li {
-
 	font-family: 'Montserrat', sans-serif;
+	margin-right: 5px;
 
 
+
+}
+
+.article_under_area {
+	position: absolute;
+	bottom: 5px;
+
+}
+
+.article_under_area #view-style {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 10px;
+	vertical-align: top;
+}
+
+.article_under_area #view-style span {
+	font-size: 12px;
 }
 
 .entry .sns-counts-num li p {
@@ -128,6 +185,15 @@ left: 410px;
 
 }
 
+.entry .sns-counts-num .fv-counts-num {
+	display: inline-block;
+	border-radius: 5px;
+	background: #FFD700;
+	color: #Fff;
+	padding: 2px 5px;
+
+}
+
 
 .entry .sns-counts-num .count {
 	font-size: 16px;
@@ -135,7 +201,7 @@ left: 410px;
 	color: #fff;
 }
 
-.entry .entry-title h1 {
+.entry .title h1 {
 	line-height: 150%;
 	font-size: 17px;
 	font-weight: bold;
@@ -143,32 +209,26 @@ left: 410px;
 
 }
 
-.entry .entry-title .article-excerpt {
-	line-height: 120%;
-	color: #666;
-	font-size: 13px;
-
+.entry .entry_2_title h1 {
+	line-height: 150%;
+	font-size: 17px;
+	font-weight: bold;
+	min-height: 25px;
+	color: #fff;
+	margin-top: 10px;
+	width: 500px;
 }
 
-.entry .entry-title .feature-name {
+
+
+.entry .title .feature-name {
 	line-height: 200%;
-font-size: 16px;
+	font-size: 16px;
 
 }
 
 
-.entry .entry-title .article-excerpt p{
 
-		margin-top: 5px;
-
-}
-
-.entry a {
-	-webkit-transition: background 0.3s ease;
--moz-transition: background 0.3s ease;
--o-transition: background 0.3s ease;
-transition: background 0.3s ease;
-}
 
 #contents-body #article-top p {
 	font-weight: normal;
@@ -268,23 +328,6 @@ content:">";
 
 /* パンくずリスト終わり */
 
-
-.entry .author-vcard {
-	font-size: 16px;
-	float: left;
-	font-weight: bold;
-	position: absolute;
-	bottom: 16px;
-	left: 580px;
-}
-
-.entry .top-user-thumbnail {
-	height: 30px;
-	position: absolute;
-	bottom: 12px;
-	left: 545px;
-
-}
 
 
 

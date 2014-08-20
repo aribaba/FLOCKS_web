@@ -647,17 +647,17 @@ line-height: 60px;
 
 
 
-#view-number {
+.page-header #view-number {
 	font-size: 22px;
 	line-height: 50px;
 	margin-left: 10px;
 }
 
-#view {
+.page-header #view {
 	font-size: 16px;
 }
 
-#view-style {
+.page-header #view-style {
 
 	height: 50px;
 	font-family: 'Montserrat', sans-serif;
