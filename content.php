@@ -20,51 +20,51 @@
         $canonical_url_encode=urlencode($canonical_url);//記事URLエンコード
         $title_encode=urlencode($title);//記事タイトルエンコード
         ?>
-        <ul class="social-buttons">
+            <ul class="social-buttons">
 
-        <div>
-            <ul class="page_sns_counter">
-                <li class="page_fb_counts">
-                    <ul><li>
-                        <a onclick="javascript:window.open(encodeURI(decodeURI('http://www.facebook.com/sharer.php?src=bm&u=<?php echo $canonical_url_encode;?>&amp;t=<?php echo $title_encode;?>')), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="page_counts_img" id="page_fb_counts_img"></a>
-                        </li>
-                        <li>
-                            <div id="socialarea_facebook_<?php echo $post->ID;?>" class="page_sns_count_number"><p><span class="count"></span></p>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="page_tw_counts">
-                    <ul><li>
-                        <a onclick="javascript:window.open(encodeURI(decodeURI('http://twitter.com/intent/tweet?url=<?php echo $canonical_url_encode;?>&text=<?php echo $title_encode; ?>')
-                            ), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="page_counts_img" id="page_tw_counts_img">
-                        </a>
-                        </li>
-                        <li>
-                    <div id="socialarea_twitter_<?php echo $post->ID;?>" class="page_sns_count_number"><p><span class="count"></span></p></div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="page_hb_counts">
-                    <ul><li>
-                    <a onclick="javascript:window.open('http://b.hatena.ne.jp/add?mode=confirm&url=<?php echo $canonical_url_encode;?>&title=<?php echo $_title;?>', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="page_counts_img" id="page_hb_counts_img">
-                        </a>
+            <div>
+                <ul class="page_sns_counter">
+                    <li class="page_fb_counts">
+                        <ul><li>
+                            <a onclick="javascript:window.open(encodeURI(decodeURI('http://www.facebook.com/sharer.php?src=bm&u=<?php echo $canonical_url_encode;?>&amp;t=<?php echo $title_encode;?>')), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="page_counts_img fade fade-black" id="page_fb_counts_img"></a>
+                            </li>
+                            <li>
+                                <div id="socialarea_facebook_<?php echo $post->ID;?>" class="page_sns_count_number"><p><span class="count "></span></p>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
-                        <li>
-                    <div id="socialarea_hatebu_<?php echo $post->ID;?>" class="page_sns_count_number"><p><span class="count"></span></p></div>
+                    <li class="page_tw_counts">
+                        <ul><li>
+
+                            <a onclick="javascript:window.open('http://twitter.com/intent/tweet?url=<?php echo $canonical_url_encode;?>&text=<?php echo $title_encode;?>', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="page_counts_img fade fade-black" id="page_tw_counts_img">
+                            </a>
+                            </li>
+                            <li>
+                        <div id="socialarea_twitter_<?php echo $post->ID;?>" class="page_sns_count_number"><p><span class="count"></span></p></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="page_hb_counts">
+                        <ul><li>
+                        <a onclick="javascript:window.open('http://b.hatena.ne.jp/add?mode=confirm&url=<?php echo $canonical_url_encode;?>&title=<?php echo $_title;?>', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" class="page_counts_img fade fade-black" id="page_hb_counts_img">
+                            </a>
+                        </li>
+                            <li>
+                        <div id="socialarea_hatebu_<?php echo $post->ID;?>" class="page_sns_count_number"><p><span class="count"></span></p></div>
+                        </li>
+
+                        </ul>
+                    </li>
+                    <li class="page_fav_counts">
+                        <ul>
+                            <li><?php wpfp_link() ?></li>
+                            <li id="page_fav_number"><?php echo get_post_meta($post->ID, 'wpfp_favorites', true); ?></li>
+                        </ul>
                     </li>
 
-                    </ul>
-                </li>
-                <li class="page_fav_counts">
-                    <ul>
-                        <li><?php wpfp_link() ?></li>
-                        <li id="page_fav_number"><?php echo get_post_meta($post->ID, 'wpfp_favorites', true); ?></li>
-                    </ul>
-                </li>
-
-                <li><div id="view-style"> <span id="view-number"><?php if (function_exists('wpp_get_views')) { echo wpp_get_views( get_the_ID() ); } ?></span><span id="view">views</span></div></li>
-            </ul>
+                    <li><div id="view-style"> <span id="view-number"><?php if (function_exists('wpp_get_views')) { echo wpp_get_views( get_the_ID() ); } ?></span><span id="view">views</span></div></li>
+                </ul>
         <script type="text/javascript">
         get_social_count_facebook("<?php the_permalink(); ?>", "socialarea_facebook_<?php echo $post->ID;?>");
         get_social_count_twitter("<?php the_permalink(); ?>", "socialarea_twitter_<?php echo $post->ID;?>");
