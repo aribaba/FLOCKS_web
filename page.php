@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<?php get_sidebar(); ?>
 
 <div id="contents-body">
 <?php
@@ -13,5 +12,5 @@ endif;
 </div>
 
 <!--contents-body end-->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

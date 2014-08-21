@@ -80,17 +80,7 @@
     </div>
     <a href="<?php the_permalink(); ?>" class="entry_2">
         <div class="entry_2_title">
-    <h1>
-            <?php
-              $terms = get_the_terms( $post->id, 'feature' );
-        if ( !empty($terms) ) {
-          if ( !is_wp_error( $terms ) ) {
-            foreach( $terms as $term ) {
-              echo '【' . $term->name . '】';
-          }
-     }
-}
-?><?php the_title(); ?></h1>
+
 
 
         <p class="article-excerpt">
