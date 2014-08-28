@@ -12,7 +12,7 @@ Template Name: feature
 		<h1 class="page-title">特集一覧</h1>
 
 	</header>
-	<div id="article-top">
+	<div id="front_article_wrapper">
 	<div class="feature-post">
 <?php
 $args = array(

@@ -89,29 +89,99 @@ box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 
-.mans {
+#front_article_wrapper .recommend {
+	background: #222;
+}
+
+#header_rapper .recommend {
+	border-bottom: 3px solid #222;
+}
+
+.recommend .page-title {
+		background: #222;
+}
+
+#front_article_wrapper .mans {
 	background: #428abd;
 }
 
-.boys {
+#header_rapper .mans {
+	border-bottom: 3px solid #428abd;
+}
+
+.mans .page-title {
+		background: #428abd;
+}
+
+#front_article_wrapper .boys {
 	background: #ffbe00;
 }
 
-.ladys {
+#header_rapper .boys {
+	border-bottom: 3px solid #ffbe00;
+}
+.boys .page-title {
+		background: #ffbe00;
+}
+
+#front_article_wrapper .ladys {
 	background: #f05187;
 }
 
-.web {
+#header_rapper .ladys {
+	border-bottom: 3px solid #f05187;
+}
+
+.ladys .page-title {
+		background: #f05187;
+}
+
+#front_article_wrapper .web {
 	background: #7aa821;
 }
 
-.girls {
-	background: #f75410;
-
+#header_rapper .web {
+	border-bottom: 3px solid #7aa821;
 }
 
-.moe {
+.web .page-title {
+		background: #7aa821;
+}
+
+#front_article_wrapper .girls {
+	background: #f75410;
+}
+
+#header_rapper .girls {
+	border-bottom: 3px solid #f75410;
+}
+
+.girls .page-title {
+		background: #f75410;
+}
+
+#front_article_wrapper .moe {
 	background: #ff9c8c;
+}
+
+#header_rapper .moe {
+	border-bottom: 3px solid #ff9c8c;
+}
+
+.moe .page-title {
+		background: #ff9c8c;
+}
+
+#front_article_wrapper .manager-room {
+	background: #2c4f54;
+}
+
+#header_rapper .manager-room {
+	border-bottom: 3px solid #2c4f54;
+}
+
+.manager-room .page-title {
+		background: #2c4f54;
 }
 
 .manager-room {
@@ -217,19 +287,6 @@ text-align: center;
 	height: 150px;
 }
 
-/* #balloon-3-top-right:after {
-	content: "";
-	position: absolute;
-	top: -15px; right: 0;
-	margin-left: 0;
-	display: block;
-	width: 0px;
-	height: 0px;
-	border-style: solid;
-	border-width: 15px 0 0 20px;
-	border-color: transparent transparent transparent #19283C;
-	z-index: -1;
-} */
 
 .noposts {
 	font-size: 15px;
@@ -392,43 +449,6 @@ div.reaction_buttons{
 	font-size: 15px;
 }
 /* ページャー終わり */
-
-/* カテゴリーリボン */
-
-/* #balloon-3-top-right {
-	position: absolute;
-	display: inline-block;
-	padding: 2px 20px;
-	min-width: 80px;
-	height: 30px;
-	color: #F6F6F6;
-	line-height: 33px;
-	text-align: center;
-	z-index: 0;
-	right: -20px;
-	bottom: 40px;
-	font-size: 15px;
-	font-weight: bold;
-	opacity: 0.8;
-}
-#balloon-3-top-right:after {
-	content: "";
-	position: absolute;
-	top: -15px; right: 0;
-	margin-left: 0;
-	display: block;
-	width: 0px;
-	height: 0px;
-	border-style: solid;
-	border-width: 15px 0 0 20px;
-	border-color: transparent transparent transparent #224;
-	z-index: -1;
-}
-
-
-
- */
-/* カテゴリーリボンカラー終わり */
 
 #balloon-3-top-right {
 	position: absolute;

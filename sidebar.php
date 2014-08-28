@@ -7,7 +7,7 @@ if(is_single()) {
 		$category = get_the_category();
 		$class .= $category[0]->cat_ID;
 		}?>
-		<?php wp_list_categories('title_li=&child_of=1&show_count=1&current_category='.$class); ?>
+		<?php wp_list_categories('title_li=&child_of=1&show_count=1&orderby=count&order=desc&exclude=295&current_category='.$class); ?>
 </ul>
 
 

@@ -93,3 +93,4 @@ function remove_admin_bar(){
 	}
 }
 add_action( 'admin_menu','remove_admin_bar' );
+

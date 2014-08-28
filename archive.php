@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 <div id="contents-body">
-
+	<div id="header_rapper">
 	<header id="archive-header" class="<?php if ( is_category() || is_single())
  { ?><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat -> category_nicename; } ?> <?php }
   ?>">
@@ -16,7 +16,8 @@
 		</h1>
 
 	</header>
-	<div id="article-top">
+	</div>
+	<div id="front_article_wrapper">
 	<div class="post">
 <?php
 if (have_posts()) :
