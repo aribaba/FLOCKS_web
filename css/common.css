@@ -93,6 +93,10 @@ box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 	background: #222;
 }
 
+.entry .recommend {
+	background: #222;
+}
+
 #header_rapper .recommend {
 	border-bottom: 3px solid #222;
 }
@@ -102,6 +106,10 @@ box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 #front_article_wrapper .mans {
+	background: #428abd;
+}
+
+.entry .mans {
 	background: #428abd;
 }
 
@@ -117,6 +125,10 @@ box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 	background: #ffbe00;
 }
 
+.entry .boys {
+	background: #ffbe00;
+}
+
 #header_rapper .boys {
 	border-bottom: 3px solid #ffbe00;
 }
@@ -125,6 +137,10 @@ box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 #front_article_wrapper .ladys {
+	background: #f05187;
+}
+
+.entry .ladys {
 	background: #f05187;
 }
 
@@ -140,6 +156,10 @@ box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 	background: #7aa821;
 }
 
+.entry .web {
+	background: #7aa821;
+}
+
 #header_rapper .web {
 	border-bottom: 3px solid #7aa821;
 }
@@ -149,6 +169,10 @@ box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 #front_article_wrapper .girls {
+	background: #f75410;
+}
+
+.entry .girls {
 	background: #f75410;
 }
 
@@ -164,6 +188,10 @@ box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 	background: #ff9c8c;
 }
 
+.entry .moe {
+	background: #ff9c8c;
+}
+
 #header_rapper .moe {
 	border-bottom: 3px solid #ff9c8c;
 }
@@ -173,6 +201,10 @@ box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 #front_article_wrapper .manager-room {
+	background: #2c4f54;
+}
+
+.entry .manager-room {
 	background: #2c4f54;
 }
 

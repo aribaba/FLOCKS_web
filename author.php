@@ -59,7 +59,7 @@ if ($userdata->twitter) {
 </div>
 <!--sidebar end-->
 
-<div id="contents-body">
+<div id="contents_body_author_page">
 	<?php
 		if (!is_front_page() && function_exists('bread_crumb')) :
 			bread_crumb('navi_element=nav&elm_id=bread-crumb');

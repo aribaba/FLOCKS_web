@@ -3,63 +3,6 @@
 
 
 
-
-#contents-body .top-article .page-thumbnail {
-	float: left;
-	margin-right: 15px;
-	height: 160px;
-}
-
-#contents-body .top-article .page-header .social-buttons {
-	list-style: none;
-	margin : 25px auto 0;
-	overflow: hidden;
-	width: 90%;
-}
-
-#contents-body .page-header .social-buttons li {
-	padding-right: 10px;
-	float: left;
-}
-
-#contents-body #archive-header {
-	height: 40px;
-	font-weight: normal;
-	color: #Fff;
-	width: 741px;
-	margin: 0 auto;
-}
-
-#contents-body #archive-header .page-title {
-	font-size: 16px;
-	line-height: 45px;
-	padding: 0px 10px;
-	display: inline-block;
-	font-weight: normal;
-	border-radius: 5px 5px 0 0;
-}
-
-#contents-body #taxonomy-header {
-	height: 60px;
-	font-weight: normal;
-	text-align: center;
-	color: #Fff;
-	background: #428abd;
-	width: 740px;
-	margin: 0 auto;
-}
-
-#contents-body #taxonomy-header .page-title {
-	font-size: 30px;
-	line-height: 60px;
-}
-
-
-
-
-
-
-
 .slides .caption {
 	display: inline;
 	font-size: 20px;

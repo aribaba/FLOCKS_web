@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <div id="article-page">
-<div id="contents-body">
+<div id="article_content">
 <?php
 if (have_posts()) :
   while (have_posts()) :
@@ -20,5 +20,4 @@ endif;
 </div>
 </div>
 <!--contents-body end-->
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

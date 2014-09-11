@@ -59,8 +59,6 @@ function update_profile_fields( $contactmethods ) {
     $contactmethods['place'] = '居住地';
     $contactmethods['birth'] = '生まれ年';
     $contactmethods['user_sex'] = '性別';
-    $contactmethods['category'] = '好きなジャンル';
-    $contactmethods['manga'] = '好きな漫画';
 
     return $contactmethods;
 }

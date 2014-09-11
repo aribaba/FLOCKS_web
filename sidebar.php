@@ -13,6 +13,14 @@ if(is_single()) {
 
 </div>
 
+	<div id="go_writer_page"><a href="http://flocks.jp/writer/" target="_blank" class="fade-black-2 fade">
+		<p>ライター</p>
+	</a></div>
+
+
+	<div id="side-contents">
+	<?php dynamic_sidebar('primary-widget-area' ); ?>
+</div>
 
 
 
@@ -32,10 +40,6 @@ if(is_single()) {
 	</div>
 
 
-</div>
-
-	<div id="side-contents">
-	<?php dynamic_sidebar('primary-widget-area' ); ?>
 </div>
 </div>
 <!--sidebar end-->

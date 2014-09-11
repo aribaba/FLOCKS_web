@@ -63,7 +63,11 @@
                         </ul>
                     </li>
 
-                    <li><div id="view-style"> <span id="view-number"><?php if (function_exists('wpp_get_views')) { echo wpp_get_views( get_the_ID() ); } ?></span><span id="view">views</span></div></li>
+                    <!-- <li><div id="view-style">
+                     <span id="view-number">
+                        <?php if (function_exists('wpp_get_views')) { echo wpp_get_views( get_the_ID() ); } ?>
+                        </span>
+                        <span id="view">views</span></div></li> -->
                 </ul>
         <script type="text/javascript">
         get_social_count_facebook("<?php the_permalink(); ?>", "socialarea_facebook_<?php echo $post->ID;?>");

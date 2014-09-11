@@ -3,8 +3,7 @@
 
 #sidebar {
 	width: 301px;
-	float: left;
-	margin-top: 18px;
+	float: right;
 
 
 }
@@ -305,3 +304,26 @@ font-size: 20px;
 	font-weight: bolder;
 	line-height: 30px;
 }
+
+
+#go_writer_page {
+	width: 100%;
+	background: #fff;
+	height: 50px;
+	margin-bottom: 15px;
+	-webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#go_writer_page p {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+}
+
+#go_writer_page a {
+	display: block;
+}
+
