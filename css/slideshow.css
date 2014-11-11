@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+#wrapper {
+	overflow: hidden;
+	width: 97%;
+	padding: 0;
+	margin: 0 auto;
+	height: 400px;
+}
+
+
+input[type="radio"] {
+	display: none;
+}
+
+#slideshow {
+	position: relative;
+	width: 100%;
+}
+
+.slideContents {
+	position: relative;
+	background: #aaa;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+
+}
+
+.slideContents {
+	width: 400%;
+	-webkit-transition: -webkit-transform .6s;
+	transition: transform .6s;
+
+}
+
+.slideContents:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+
+@-webkit-keyframes autoplay {
+  0% { -webkit-transform: translateX(0); }
+  20% { -webkit-transform: translateX(0); }
+  25% { -webkit-transform: translateX(-100%); }
+  45% { -webkit-transform: translateX(-100%); }
+  50% { -webkit-transform: translateX(-200%); }
+  70% { -webkit-transform: translateX(-200%); }
+  75% { -webkit-transform: translateX(-300%); }
+  95% { -webkit-transform: translateX(-300%); }
+  100% { -webkit-transform: translateX(0%); }
+}
+@keyframes autoplay {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+
+#slideshow .slideContents #slide1 { animation-delay: 0; }
+#slideshow .slideContents #slide2 { animation-delay: -6s; }
+#slideshow .slideContents #slide3 { animation-delay: -12s; }
+#slideshow .slideContents #slide4 { animation-delay: -18s; }
+
+
+
+
+.slideContents section {
+	float: left;
+	width: 25%;
+	-webkit-transition: opacity .6s;
+	transition: opacity .6s;
+	animation: autoplay 24s infinite;
+  -webkit-animation: autoplay 24s infinite;
+
+}
+.slideContents #slide1 {
+	position: relative;
+}
+
+
+.slideContents section img {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+	vertical-align: center;
+	position: relative;
+}
+
+.slideContents section dl {
+	position: absolute;
+	bottom: 0px;
+	/* -webkit-transform: translateY(100%);
+	transform: translateY(100%); */
+	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+	transition: opacity 0.6s, transform 0.6s;
+	background: #222;
+	padding: 10px;
+	height: 96%;
+	opacity: 0.9;
+}
+
+/* .slideContents section #title {
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+	transition: opacity 0.6s, transform 0.6s;
+	background: #222;
+	height: 50px;
+	position: absolute;
+	bottom: 70px;
+	padding: 10px;
+	width: 100%;
+	text-align: left;
+	color: #fff;
+}
+ */
+
+/* .slideContents section:hover #title {
+	opacity: 0;
+} */
+/*
+.slideContents section #title p {
+	font-size: 20px;
+	line-height: 30px;
+	height: 30px;
+}
+ */
+.slideContents section dl {
+	color: #fff;
+}
+
+.slideContents section dl dt {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: left;
+	height: 60px;
+	line-height: 30px;
+	margin: 20px 0 10px;
+
+}
+
+.slideContents section dl dd {
+	font-size: 14px;
+	font-weight: normal;
+	text-align: left;
+}
+
+/* .slideContents section:hover dl {
+	opacity: 0.9;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+
+} */
+.slideContents section a {
+	color: #fff;
+}
+
+
+#switch1:checked ~ #slideshow .slideContents {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+#switch2:checked ~ #slideshow .slideContents {
+  -webkit-transform: translateX(-25%);
+  transform: translateX(-25%);
+}
+#switch3:checked ~ #slideshow .slideContents {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#switch4:checked ~ #slideshow .slideContents {
+  -webkit-transform: translateX(-75%);
+  transform: translateX(-75%);
+}
+/*
+#slideshow .arrow label {
+  pointer-events: none;
+}
+
+#switch1:checked ~ #slideshow .prev label[for="switch4"],
+#switch2:checked ~ #slideshow .prev label[for="switch1"],
+#switch3:checked ~ #slideshow .prev label[for="switch2"],
+#switch4:checked ~ #slideshow .prev label[for="switch3"],
+
+#switch1:checked ~ #slideshow .next label[for="switch2"],
+#switch2:checked ~ #slideshow .next label[for="switch3"],
+#switch3:checked ~ #slideshow .next label[for="switch4"],
+#switch4:checked ~ #slideshow .next label[for="switch1"] {
+  pointer-events: auto;
+}
+
+
+.arrow,
+.arrow label,
+.arrow .ico {
+  position: absolute;
+}
+
+.arrow {
+  top: 0;
+  margin: 0;
+  transition: background .3s;
+}
+.prev { left: 0; }
+.next { right: 0; }
+
+.arrow:hover {
+  background: rgba(255,255,255,.2);
+}
+
+.arrow,
+.arrow label {
+  cursor: pointer;
+  width: 50px;
+  height: 89%;
+}
+
+.arrow label {
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.arrow .ico {
+	top: 50%;
+	width: 12px;
+	height: 12px;
+	margin-top: -6px;
+	border-top: 3px solid #fff ;
+	border-right: 3px solid #fff;
+	opacity: 0 ;
+	transition: right .6s, left .6s opacity .6s;
+}
+
+.arrow:hover .ico {
+  opacity: .6;
+  transition-duration: .3s;
+}
+
+.prev .ico {
+  left: 60%;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.next .ico {
+  right: 60%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.prev:hover .ico { left: 30%; }
+.next:hover .ico { right: 30%; }
+ */
+#feature_article_archive {
+
+}
+
+#feature_article_archive .feature_article_post_ul:after {
+	content: "";
+	clear: both;
+	display: none;
+}
+
+
+#feature_article_archive .feature_article_post_ul {
+	padding: 5px;
+	margin: 40px 0 80px;
+}
+
+#feature_article_archive .feature_article_post_li {
+	width: 120px;
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 50px;
+
+}
+
+#feature_article_archive .feature_article_post_li:last-child {
+	margin: 0;
+}
+
+#feature_article_archive .feature_article_post_li:first-child {
+	margin-left: 35px;
+}
+
+#feature_article_archive .feature_article_thumb {
+	display: inline-block;
+}
+
+#feature_article_archive .feature_article_thumb a:hover {
+}
+
+#feature_article_archive .feature_aritcle_title p {
+	font-size: 12px;
+	line-height: 100%;
+
+}

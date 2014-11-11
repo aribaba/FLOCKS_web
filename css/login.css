@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+
+
+
+#contents-body-login #page-title {
+	display: none;
+}
+
+
+
+#contents-body-login .entry-content{
+	width: 1020px;
+	margin: 20px auto;
+	padding: 0 15px 0 15px;
+	position: relative;
+}
+
+#contents-body-login .entry-content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#contents-body-login #sns-login {
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	float: left;
+	width: 400px;
+}
+
+#contents-body-login #sns-login h2 {
+	font-size: 24px;
+	text-align: center;
+	font-weight: normal;
+
+}
+
+#contents-body-login #sns-login #sns-click {
+
+	margin: 15px auto;
+	width: 160px;
+
+}
+
+#contents-body-login #mailaddress-login {
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	float: left;
+	width: 450px;
+
+}
+
+#contents-body-login #mailaddress-login h2 {
+		font-size: 24px;
+	text-align: center;
+	font-weight: normal;
+}
+
+#contents-body-login #mailaddress-login .text-box {
+	width: 400px;
+	margin: 15px auto;
+}
+
+#contents-body-login #mailaddress-login .text-box input {
+
+	border:0;
+	padding:10px;
+	font-size:16px;
+	font-weight: bold;
+	font-family:Arial, sans-serif;
+	color:#aaa;
+	border:solid 1px #ccc;
+	margin:0 0 10px;
+	width:400px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+#contents-body-login #mailaddress-login .forgetmenot input {
+	height: 19px;
+	width: 19px;
+}
+
+#contents-body-login #mailaddress-login .forgetmenot {
+	width: 400px;
+	margin: 0 auto;
+
+}
+
+#contents-body-login #mailaddress-login .forgetmenot label {
+	font-size: 15px;
+}
+
+#contents-body-login #mailaddress-login .submit {
+	margin: 20px auto;
+	width: 160px;
+}
+
+#contents-body-login #mailaddress-login .submit input {
+	width: 180px;
+	height: 50px;
+	background: #428abd;
+	border-radius: 6px;
+	font-family:'Lucida Grande',
+ 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',
+ Meiryo, メイリオ, sans-serif;
+ color: #fff;
+ font-size: 16px;
+ border: none;
+
+
+
+}
+
+#contents-body-login #mailaddress-login .submit input:hover {
+	cursor: pointer;
+
+
+}
+
+#contents-body-login #or {
+	background: #428abd;
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	margin: 150px 15px 0;
+}
+#contents-body-login #or span {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+
+}

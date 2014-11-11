@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+
+#sidebar {
+	width: 301px;
+	float: right;
+
+
+}
+
+.wpp-views  {
+	font-size: 12px;
+	font-style: none;
+}
+.wpp-author {
+	font-size: 12px;
+	font-style: none;
+}
+
+
+.wpp-date {
+	font-size: 12px;
+}
+
+#sidebar .wpp-list a:hover{
+	border-bottom: 1px solid #428abd;
+
+	
+}
+#sidebar .wpp-list a {
+	color: #428abd;
+	display: inline;
+
+}
+
+#sidebar .popular-posts {
+	-webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+}
+.widget_recent_entries {
+	background: #fff;
+	-webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+
+#searchform2 {
+    position: relative;
+    margin-bottom: 20px;
+
+
+}
+#keywords2  {
+    width: 95%;
+    height: 16px;
+    background: #999;
+    border: none;
+    padding: 4px;
+    color: #FFF;
+}
+#searchBtn2 {
+    position: absolute;
+    top: 3px;
+    _top: 1px;
+   right: 0px;
+}
+*:first-child + html #searchBtn2    {
+    top: 1px;
+}
+
+
+
+
+
+#side-sns {
+	display: block;
+
+	margin: 15px 0;
+	width: 301px;
+}
+
+#side_sns_contents {
+	width: 130px;
+	margin: 0 auto;
+}
+
+#side_tw,#side_fb {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#side_tw_a {
+	display: inline-block;
+	width: 47px;
+	height: 47px;
+	-webkit-transition: 0.4s ease;
+       -moz-transition: 0.4s ease;
+         -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+	background-image: url(http://flocks.jp/wp-content/uploads/2014/08/WornIcons-twiiter.png) ;
+}
+
+#side_tw_a:hover {
+	background-position: 0.46px 63px;
+	-webkit-transition: 0.4s ease;
+       -moz-transition: 0.4s ease;
+         -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+}
+
+
+#side_fb_a {
+	display: inline-block;
+	width: 48px;
+	height: 47px;
+	-webkit-transition: 0.4s ease;
+       -moz-transition: 0.4s ease;
+         -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+	background-position: 0 4px;
+	background-image: url(http://flocks.jp/wp-content/uploads/2014/08/WornIcons.png);
+}
+
+#side_fb_a:hover {
+	background-position: 0.46px 57px;
+	-webkit-transition: 0.4s ease;
+       -moz-transition: 0.4s ease;
+         -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+
+}
+
+#sidebar .widget-title{
+	font-size: 20px;
+font-weight: bold;
+display: block;
+background: #428abd;
+width: 97%;
+height: 40px;
+line-height: 40px;
+text-align: center;
+padding: 5px;
+color: #Fff;
+}
+
+#sidebar ul li {
+	font-size: 13px;
+	color: #222;
+	font-weight: bold;
+	background: #Fff;
+}
+
+#sidebar ul .cat-item {
+	font-size: 15px;
+	color: #222;
+	font-weight: bold;
+	background: #Fff;
+}
+
+#sidebar .wpp-list li {
+	padding: 20px 5px;
+	border-bottom: solid 2px #ddd;
+	height: 82px;
+}
+
+#sidebar ul li .current-cat {
+	background: #428abd;
+	color: #FFF;
+
+
+}
+
+#sidebar ul li .current-cat a {
+background: #428abd;
+	color: #FFF;
+}
+
+#sidebar #npcatch {
+	margin-bottom: 20px;
+}
+
+#sidebar #npcatch li {
+	list-style: none;
+	padding: 20px 5px;
+	height: 90px;
+border-bottom: solid 2px #ddd;
+font-size: 13px;
+color: #222;
+font-weight: bold;
+}
+
+#sidebar #npcatch li a {
+	font-size: 13px;
+	color:#428abd;
+	font-weight: bold;
+
+}
+
+#sidebar #npcatch li a:hover {
+	border-bottom: 1px solid #428abd;
+}
+
+
+#sidebar #npcatch li img {
+
+
+display: inline;
+float: left;
+margin: 0 5px 0 0;
+border: none;
+
+}
+
+#sidebar #npcatch li .date {
+	font-size: 12px;
+	color: #222;
+}
+
+#sidebar #newpostcatch-2 {
+
+}
+
+#sidebar #wpfp-most_favorited_posts {
+
+}
+
+#sidebar #wpfp-most_favorited_posts li {
+	list-style-type: none;
+}
+
+#author-sidebar {
+	width: 301px;
+	float: left;
+	margin-top: 18px;
+	background: #fff;
+}
+
+#author-sidebar #author-img {
+	width: 150px;
+	margin: 20px auto;
+
+}
+
+#author-sidebar #author-name{
+	font-size: 20px;
+	padding: 5px;
+	margin: 0 auto;
+	width: 210px;
+	font-weight: bold;
+	height: 30px;
+}
+
+#author-sidebar #author-description {
+	font-size: 14px;
+	line-height: 170%;
+	padding: 15px;
+	margin-top: 10px;
+}
+
+#author-sidebar ul {
+	list-style: none;
+/* display: inline-block; */
+width: 100px;
+display: block;
+ margin: 5px auto 0;
+
+}
+
+#author-sidebar #author-page-sns li {
+	float: left;
+	margin-right: 10px;
+
+}
+
+#author-sidebar #author-page-sns li img {
+	height: 30px;
+	width: 30px;
+	vertical-align: bottom;
+
+}
+
+#author-sidebar #author-page-sns li a {
+	display: block;
+}
+
+#author-sidebar #author-left {
+	height: 30px;
+	line-height: 30px;
+	vertical-align: bottom;
+	display: inline-block;
+font-size: 20px;
+}
+
+
+#author-sidebar #author-cast {
+		/* display: block; */
+	font-size: 12px;
+	/* margin-top: 10px; */
+	font-weight: bolder;
+	line-height: 30px;
+}
+
+
+#go_writer_page {
+	width: 100%;
+	background: #fff;
+	height: 50px;
+	margin-bottom: 15px;
+	-webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#go_writer_page p {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+}
+
+#go_writer_page a {
+	display: block;
+}
+
+#sidebar_search {
+	height: 50px;
+	margin-bottom: 15px;
+
+}
+
+#sidebar_search #searchsubmit {
+	border-style: none;
+	background: #428abd;
+	color: #fff;
+	height: 40px;
+	font-weight: bold;
+	padding: 4px 8px;
+	width: 18%;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+#sidebar_search #search_screen {
+	height: 34px;
+	width: 77%;
+	border-style: none;
+	font-size: 15px;
+	padding: 3px 5px;
+	color: #222;
+	font-family: Meiryo, メイリオ, sans-serif;
+
+}
+
+
+#sidebar_search form input[type="button"],
+#sidebar_search  form input[type="submit"] {
+-webkit-appearance: none;
+}
+
+#hidden_tag {
+	margin-bottom: 15px;
+	background: #fff;
+}
+
+#hidden_tag .hidden_tags_wrap{
+	background: #428abd;
+	border-radius: 10px;
+	padding: 2px 4px;
+	color: #fff;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.hidden_tags_p a {
+	color: #fff;
+	font-size: 12px;
+}

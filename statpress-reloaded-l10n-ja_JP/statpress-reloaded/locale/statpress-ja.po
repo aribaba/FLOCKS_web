@@ -1,0 +1,491 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: StatPress Reloaded\n"
+"Report-Msgid-Bugs-To: http://matrixagents.org/phpBB/\n"
+"POT-Creation-Date: 2008-12-17 17:56+0100\n"
+"PO-Revision-Date: 2009-09-12 20:27+0900\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"Last-Translator:  Masaharu Takishita<info@ecworks.jp>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../statpress.php:39 ../statpress.php:323
+msgid "Overview"
+msgstr "概要"
+
+#: ../statpress.php:40
+msgid "Details"
+msgstr "詳細"
+
+#: ../statpress.php:41 ../statpress.php:885
+msgid "Spy"
+msgstr "追跡"
+
+#: ../statpress.php:42 ../statpress.php:957 ../statpress.php:1022
+#: ../statpress.php:1185 ../statpress.php:1214
+msgid "Search"
+msgstr "検索"
+
+#: ../statpress.php:43 ../statpress.php:279
+msgid "Export"
+msgstr "エクスポート"
+
+#: ../statpress.php:44 ../statpress.php:141
+msgid "Options"
+msgstr "オプション"
+
+#: ../statpress.php:45
+msgid "User Agents"
+msgstr "ユーザエージェント"
+
+#: ../statpress.php:46
+msgid "StatPressUpdate"
+msgstr "StatPressデータの更新"
+
+#: ../statpress.php:135
+msgid "Saved"
+msgstr "保存"
+
+#: ../statpress.php:145
+msgid "Collect data about logged users, too."
+msgstr "ログインユーザを集計しない"
+
+#: ../statpress.php:146
+msgid "Do not collect spiders visits"
+msgstr "スパイダーの来訪を集計しない"
+
+#: ../statpress.php:149
+msgid "Automatically delete visits older than"
+msgstr "来訪ログを自動的に削除する日数"
+
+#: ../statpress.php:156 ../statpress.php:186
+msgid "Never delete!"
+msgstr "削除しない"
+
+#: ../statpress.php:162 ../statpress.php:189
+msgid "month"
+msgstr "月"
+
+#: ../statpress.php:168 ../statpress.php:174
+msgid "months"
+msgstr "月"
+
+#: ../statpress.php:180 ../statpress.php:190
+msgid "year"
+msgstr "年"
+
+#: ../statpress.php:184
+msgid "Automatically delete spider visits older than"
+msgstr "スパイダーのログを自動的に削除する日数"
+
+#: ../statpress.php:187
+msgid "day"
+msgstr "日"
+
+#: ../statpress.php:188
+msgid "week"
+msgstr "週"
+
+#: ../statpress.php:194
+msgid "Days in Overview graph"
+msgstr "グラフの表示日数"
+
+#: ../statpress.php:220
+msgid "Minimum capability to view stats"
+msgstr "集計を見ることができる最小の権限"
+
+#: ../statpress.php:228 ../statpress.php:904
+msgid "more info"
+msgstr "追加情報"
+
+#: ../statpress.php:233
+msgid "Save options"
+msgstr "オプションの保存"
+
+#: ../statpress.php:266
+msgid "Export stats to text file"
+msgstr "ログをテキストに書き出します"
+
+#: ../statpress.php:270
+msgid "From"
+msgstr "開始日付"
+
+#: ../statpress.php:273
+msgid "To"
+msgstr "終了日付"
+
+#: ../statpress.php:276
+msgid "Fields delimiter"
+msgstr "フィールド上の区切り文字"
+
+#: ../statpress.php:326
+msgid "Total"
+msgstr "合計"
+
+#: ../statpress.php:327
+msgid "Last month"
+msgstr "先月"
+
+#: ../statpress.php:328 ../statpress.php:329
+msgid "This month"
+msgstr "今月"
+
+#: ../statpress.php:329
+msgid "Target"
+msgstr "予想到達数"
+
+#: ../statpress.php:330
+msgid "Yesterday"
+msgstr "昨日"
+
+#: ../statpress.php:331
+msgid "Today"
+msgstr "今日"
+
+#: ../statpress.php:337
+msgid "Visitors"
+msgstr "来訪者"
+
+#: ../statpress.php:409
+msgid "Pageviews"
+msgstr "ページビュー"
+
+#: ../statpress.php:481 ../statpress.php:857
+msgid "Spiders"
+msgstr "スパイダー"
+
+#: ../statpress.php:552 ../statpress.php:842
+msgid "Feeds"
+msgstr "フィード"
+
+#: ../statpress.php:699
+msgid "visitors"
+msgstr "来訪者"
+
+#: ../statpress.php:700
+msgid "pageviews"
+msgstr "ページビュー"
+
+#: ../statpress.php:701
+msgid "spiders"
+msgstr "スパイダー"
+
+#: ../statpress.php:702
+msgid "feeds"
+msgstr "フィード"
+
+#: ../statpress.php:718
+msgid "Last hits"
+msgstr "直近の状況"
+
+#: ../statpress.php:718 ../statpress.php:755 ../statpress.php:765
+#: ../statpress.php:775 ../statpress.php:785 ../statpress.php:797
+#: ../statpress.php:1556
+msgid "Date"
+msgstr "年月日"
+
+#: ../statpress.php:718 ../statpress.php:755 ../statpress.php:765
+#: ../statpress.php:775 ../statpress.php:785 ../statpress.php:798
+msgid "Time"
+msgstr "時刻"
+
+#: ../statpress.php:718 ../statpress.php:954 ../statpress.php:1558
+msgid "IP"
+msgstr "IP"
+
+#: ../statpress.php:718
+msgid "Threat"
+msgstr "脅威"
+
+#: ../statpress.php:718
+msgid "Domain"
+msgstr "ドメイン"
+
+#: ../statpress.php:718 ../statpress.php:785 ../statpress.php:800
+#: ../statpress.php:1173 ../statpress.php:1195 ../statpress.php:1202
+#: ../statpress.php:1224
+msgid "Page"
+msgstr "ページ"
+
+#: ../statpress.php:718
+msgid "OS"
+msgstr "OS"
+
+#: ../statpress.php:718 ../statpress.php:839 ../statpress.php:952
+msgid "Browser"
+msgstr "ブラウザ"
+
+#: ../statpress.php:718
+msgid "Feed"
+msgstr "フィード"
+
+#: ../statpress.php:755
+msgid "Last search terms"
+msgstr "直近の検索キーワード"
+
+#: ../statpress.php:755
+msgid "Terms"
+msgstr "キーワード"
+
+#: ../statpress.php:755
+msgid "Engine"
+msgstr "サーチエンジン"
+
+#: ../statpress.php:755 ../statpress.php:765
+msgid "Result"
+msgstr "結果"
+
+#: ../statpress.php:760 ../statpress.php:770
+msgid "page viewed"
+msgstr "該当ページ"
+
+#: ../statpress.php:765
+msgid "Last referrers"
+msgstr "直近のリファラー"
+
+#: ../statpress.php:765
+msgid "URL"
+msgstr "URL"
+
+#: ../statpress.php:775
+msgid "Last agents"
+msgstr "直近のユーザエージェント"
+
+#: ../statpress.php:775 ../statpress.php:801 ../statpress.php:947
+msgid "Agent"
+msgstr "ユーザエージェント"
+
+#: ../statpress.php:775 ../statpress.php:785
+msgid "What"
+msgstr "摘要"
+
+#: ../statpress.php:785
+msgid "Last pages"
+msgstr "直近のページ"
+
+#: ../statpress.php:795
+msgid "Last spiders"
+msgstr "直近のスパイダー"
+
+#: ../statpress.php:799 ../statpress.php:953
+msgid "Spider"
+msgstr "スパイダー"
+
+#: ../statpress.php:816
+msgid "StatPress table size"
+msgstr "StatPressのDBテーブルのサイズ"
+
+#: ../statpress.php:817
+msgid "StatPress current time"
+msgstr "StatPressの更新日時"
+
+#: ../statpress.php:818
+msgid "RSS2 url"
+msgstr "RSS2 URL"
+
+#: ../statpress.php:819
+msgid "ATOM url"
+msgstr "ATOM URL"
+
+#: ../statpress.php:820
+msgid "RSS url"
+msgstr "RSS URL"
+
+#: ../statpress.php:821
+msgid "COMMENT RSS2 url"
+msgstr "COMMENT RSS2 URL"
+
+#: ../statpress.php:822
+msgid "COMMENT ATOM url"
+msgstr "COMMENT ATOM URL"
+
+#: ../statpress.php:833
+msgid "Top days"
+msgstr "日別アクセス"
+
+#: ../statpress.php:836
+msgid "O.S."
+msgstr "OS"
+
+#: ../statpress.php:845
+msgid "Search engines"
+msgstr "サーチエンジン"
+
+#: ../statpress.php:848
+msgid "Top search terms"
+msgstr "検索キーワード"
+
+#: ../statpress.php:851
+msgid "Top referrer"
+msgstr "リファラー"
+
+#: ../statpress.php:854
+msgid "Countries (domains)"
+msgstr "国(ドメイン)"
+
+#: ../statpress.php:860
+msgid "Top pages"
+msgstr "ページアクセス数"
+
+#: ../statpress.php:864
+msgid "Top Days - Unique visitors"
+msgstr "日別ユニーク来訪者数"
+
+#: ../statpress.php:868
+msgid "Top Days - Pageviews"
+msgstr "日別ページビュー"
+
+#: ../statpress.php:872
+msgid "Top IPs - Pageviews"
+msgstr "IP別ページビュー"
+
+#: ../statpress.php:924 ../statpress.php:928
+msgid "arrived from"
+msgstr "リンク元"
+
+#: ../statpress.php:924
+msgid "searching"
+msgstr "検索キーワード"
+
+#: ../statpress.php:946
+msgid "URL Requested"
+msgstr "URLリクエスト"
+
+#: ../statpress.php:948
+msgid "Referrer"
+msgstr "リファラー"
+
+#: ../statpress.php:949
+msgid "Search terms"
+msgstr "検索キーワード"
+
+#: ../statpress.php:950
+msgid "Search engine"
+msgstr "サーチエンジン"
+
+#: ../statpress.php:951
+msgid "Operative system"
+msgstr "OS"
+
+#: ../statpress.php:964
+msgid "Field"
+msgstr "フィールド"
+
+#: ../statpress.php:975
+msgid "Group by"
+msgstr "同じものをグループ化"
+
+#: ../statpress.php:976
+msgid "Sort by"
+msgstr "ソートする"
+
+#: ../statpress.php:977
+msgid "if contains"
+msgstr "検索ワード"
+
+#: ../statpress.php:990
+msgid "sort by count if grouped"
+msgstr "グループ化の際、数でソートする"
+
+#: ../statpress.php:995
+msgid "include spiders/crawlers/bot"
+msgstr "スパイダー/クローラ/ボットを含める"
+
+#: ../statpress.php:1000
+msgid "include feed"
+msgstr "フィードを含める"
+
+#: ../statpress.php:1009 ../statpress.php:2017
+msgid "Limit results to"
+msgstr "結果表示数"
+
+#: ../statpress.php:1064
+msgid "SELECT DISTINCT"
+msgstr "重複を除外する(SELECT DISTINCT)"
+
+#: ../statpress.php:1101
+msgid "Results"
+msgstr "結果"
+
+#: ../statpress.php:1114 ../statpress.php:1559
+msgid "Count"
+msgstr "カウント数"
+
+#: ../statpress.php:1177 ../statpress.php:1206
+msgid "Category"
+msgstr "カテゴリ"
+
+#: ../statpress.php:1181
+msgid "Calendar"
+msgstr "カレンダー"
+
+#: ../statpress.php:1296 ../statpress.php:2018
+msgid "Visits"
+msgstr "カウント数"
+
+#: ../statpress.php:1554
+msgid "Unknown User Agents"
+msgstr "不明なユーザエージェント"
+
+#: ../statpress.php:1557
+msgid "Last Time"
+msgstr "最終日時"
+
+#: ../statpress.php:1560
+msgid "User Agent"
+msgstr "ユーザエージェント"
+
+#: ../statpress.php:1722 ../statpress.php:1765 ../statpress.php:1777
+#: ../statpress.php:1789 ../statpress.php:1802 ../statpress.php:1807
+#: ../statpress.php:1825
+msgid "done"
+msgstr "完了"
+
+#: ../statpress.php:1768
+msgid "Updating OS"
+msgstr "OSデータを更新中"
+
+#: ../statpress.php:1780
+msgid "Updating Browsers"
+msgstr "ブラウザデータを更新中"
+
+#: ../statpress.php:1791
+msgid "Updating Spiders"
+msgstr "スパイダーデータを更新中"
+
+#: ../statpress.php:1805
+msgid "Updating Feeds"
+msgstr "フィードデータを更新中"
+
+#: ../statpress.php:1810
+msgid "Updating Search engines"
+msgstr "サーチエンジンデータを更新中"
+
+#: ../statpress.php:1813
+msgid "null-ed"
+msgstr "null化済み"
+
+#: ../statpress.php:1815
+msgid "select-ed"
+msgstr "検索済み"
+
+#: ../statpress.php:1829
+msgid "Updated"
+msgstr "更新完了"
+
+#: ../statpress.php:1975
+msgid "Title:"
+msgstr "タイトル:"
+
+#: ../statpress.php:1976
+msgid "Body:"
+msgstr "本文:"
+
+#: ../statpress.php:2016
+msgid "Title"
+msgstr "タイトル"

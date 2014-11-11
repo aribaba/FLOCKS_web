@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+#article_content {
+	width: 840px;
+	position: relative;
+	margin: 18px auto;
+	padding-bottom: 30px;
+
+}
+
+
+
+#article-page #article_content {
+	background: #fff;
+}
+
+
+
+
+
+#article_content .page-header h1{
+	font-size: 29px;
+	line-height: 40px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	min-height: 40px;
+	display: inline;
+}
+
+
+#article_content .page-header {
+	margin-bottom: 20px;
+	border-bottom: solid 1px #ddd;
+	background: #ecebeb;
+	padding: 15px 10px 30px 10px;
+	overflow: hidden;
+
+}
+
+
+
+#article_content .entry-content .summary p {
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	display: inline;
+}
+
+#article_content .entry-content .summary {
+	background: #ddd;
+		width: 95%;
+		margin: 10px auto;
+		padding: 15px;
+		-webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+	font-weight: bold;
+
+}
+
+
+
+
+#article_content .the-text h2 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	border-bottom: 3px solid #428abd;
+	line-height: 50px;
+	display: inline;
+
+}
+
+
+
+#article_content .entry-content .entry-cover {
+	width: 330px;
+	float: left;
+}
+
+
+
+#article_content .entry-content {
+	padding: 0 25px;
+}
+
+
+
+
+
+#article_content .top-article .page-thumbnail {
+	float: left;
+	margin-right: 15px;
+	height: 160px;
+	display: inline-block;
+}
+
+#article_content .top-article .page-header .social-buttons {
+	list-style: none;
+	margin : 25px auto 0;
+	width: 90%;
+}
+
+#article_content .page-header .social-buttons li {
+	padding-right: 10px;
+	float: left;
+}
+
+#article_content #archive-header {
+	height: 40px;
+	font-weight: normal;
+	color: #Fff;
+	width: 741px;
+	margin: 0 auto;
+}
+
+#article_content #archive-header .page-title {
+	font-size: 16px;
+	line-height: 45px;
+	padding: 0px 10px;
+	display: inline-block;
+	font-weight: normal;
+	border-radius: 5px 5px 0 0;
+}
+
+#article_content #taxonomy-header {
+	height: 60px;
+	font-weight: normal;
+	text-align: center;
+	color: #Fff;
+	background: #428abd;
+	width: 740px;
+	margin: 0 auto;
+}
+
+#article_content #taxonomy-header .page-title {
+	font-size: 30px;
+	line-height: 60px;
+}
+
+
+
+
