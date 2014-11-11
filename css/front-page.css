@@ -4,8 +4,9 @@
 
 
 .slides .caption {
-	display: inline;
-	font-size: 20px;
+	display: inline-block;
+font-size: 20px;
+line-height: 30px;
 }
 
 .slides .caption-wrap {
@@ -267,7 +268,7 @@ transition: 0.3s ease;
 
 /* ログインメニュー */
 
-#header input[type="checkbox"] {
+#header .tgr{
 	visibility: hidden;
 }
 #checkbox-menu {
@@ -342,8 +343,8 @@ transition: 0.3s ease;
 	margin-left: -150px;
 	width: 300px;
 	height: auto;
-	background: #222;
 	visibility: hidden;
+	background: #222;
 	opacity: 0;
 	border-radius: 8px;
 	z-index: 9999;
@@ -386,7 +387,7 @@ transition: 0.3s ease;
 
 }
 
-#checkbox-menu input[type="checkbox"]:checked + #checkbox_label + #login-area {
+#checkbox-menu input[type="checkbox"]:checked + #checkbox_label ~ #login-area {
 	background: #222;
 	visibility: visible;
 	opacity: 1;
@@ -424,8 +425,11 @@ transition: 0.3s ease;
 	float: right;
 	margin-top: 10px;
 	cursor: pointer;
+	border-style: none;
 
 }
+
+
 
 #checkbox-menu input[type="submit"]:hover {
 }

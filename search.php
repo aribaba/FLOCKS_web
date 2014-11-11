@@ -6,8 +6,8 @@
 			bread_crumb('navi_element=nav&elm_id=bread-crumb');
 		endif;
 		?>
-	<header class="page-header">
-		<h1 class="page-title">
+	<header class="search_page_header">
+		<h1 class="search_page_title">
 			<?php the_search_query(); ?>　の検索結果
 		</h1>
 	</header>

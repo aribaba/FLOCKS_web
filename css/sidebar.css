@@ -25,7 +25,7 @@
 #sidebar .wpp-list a:hover{
 	border-bottom: 1px solid #428abd;
 
-
+	
 }
 #sidebar .wpp-list a {
 	color: #428abd;
@@ -327,3 +327,56 @@ font-size: 20px;
 	display: block;
 }
 
+#sidebar_search {
+	height: 50px;
+	margin-bottom: 15px;
+
+}
+
+#sidebar_search #searchsubmit {
+	border-style: none;
+	background: #428abd;
+	color: #fff;
+	height: 40px;
+	font-weight: bold;
+	padding: 4px 8px;
+	width: 18%;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+#sidebar_search #search_screen {
+	height: 34px;
+	width: 77%;
+	border-style: none;
+	font-size: 15px;
+	padding: 3px 5px;
+	color: #222;
+	font-family: Meiryo, メイリオ, sans-serif;
+
+}
+
+
+#sidebar_search form input[type="button"],
+#sidebar_search  form input[type="submit"] {
+-webkit-appearance: none;
+}
+
+#hidden_tag {
+	margin-bottom: 15px;
+	background: #fff;
+}
+
+#hidden_tag .hidden_tags_wrap{
+	background: #428abd;
+	border-radius: 10px;
+	padding: 2px 4px;
+	color: #fff;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.hidden_tags_p a {
+	color: #fff;
+	font-size: 12px;
+}

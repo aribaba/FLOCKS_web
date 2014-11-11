@@ -112,13 +112,14 @@ background: #fff;
 	box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
-#contents-your-profile .form-table #password .description {
+#contents-your-profile .form-table td .description {
 	position: absolute;
 
 	background: #aaa;
 	color: #fff;
 	border-radius: 15px;
 	padding: 5px;
+	font-size: 10px;
 
 }
 

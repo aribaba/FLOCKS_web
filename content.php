@@ -280,5 +280,11 @@ if( $my_query->have_posts() ) {
 
 </div>
 
+
+<div id="comments_form">
+   <?php comments_template(); ?>
+</div>
+
+
 </article>
 

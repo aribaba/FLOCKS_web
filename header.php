@@ -8,6 +8,7 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <meta name="google-site-verification" content="5t7i6IEzuQwrBMmMlIuMPL1qo_xLiDN0mDIikknWPVk" />
   <div id="fb-root"></div>
+
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -54,15 +55,7 @@ window.onload = function(){
 }
 //->
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<script src="<?php bloginfo('template_url'); ?>/js/floater.js"></script>
-
-<script src="<?php bloginfo('template_url'); ?>/js/jquery.easing.plugin.js"></script>
-
-<script src="<?php bloginfo('template_url'); ?>/js/get_social_count.js"></script>
-
-<script src="<?php bloginfo('template_url'); ?>/js/slider.js"></script>
 
 <script>
     $(function(){
@@ -81,12 +74,24 @@ window.onload = function(){
 
 
 
-
+<?php wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
+
+
+
+
+
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.easing.plugin.js"></script>
+
+<script src="<?php bloginfo('template_url'); ?>/js/get_social_count.js"></script>
+
+
 </head>
-<body <?php if (is_page(134)) {
-?> id="flocks-page-body" <?php
-}else{ ?> id="page-body" <?php } ?> >
+<body <?php if (is_page(134)) { ?>
+  id="flocks-page-body"
+  <?php }else{ ?>
+  id="page-body" <?php } ?> >
+
   <?php include_once("analyticstracking.php") ?>
 
   <script type="text/javascript">
@@ -128,13 +133,26 @@ window.onload = function(){
 
 
 
+<?php
+  if (!is_page(1213)) {
 
+
+?>
 
 
 <div id="checkbox-menu">
-  <input type="checkbox" id="checkbox" name="check" value="" />
+  <input type="checkbox" id="checkbox" class="tgr" name="check" value="" />
   <label for="checkbox" id="checkbox_label"></label>
   <div id="login-area">
+
+  <?php
+    if (isset($_COOKIE['log'])) {
+      $log = $_COOKIE['log'];
+    }else{
+      $log = '';
+    }
+    ?>
+
 
 
     <?php if (is_user_logged_in()) : ?>
@@ -143,19 +161,22 @@ window.onload = function(){
 
     <?php else : ?>
 
+
     <h2>ログイン</h2>
-    <form method="post" action="<?php echo wp_login_url() ?>?redirect_to=<?php echo esc_attr($_SERVER['REQUEST_URI']) ?>">
+    <form method="post" action="<?php echo wp_login_url(); ?>?redirect_to=<?php echo esc_attr($_SERVER['REQUEST_URI']) ?>">
 
         <p><label for="login_username" id="login_username_label">ユーザー名：</label>
 
-        <input type="text" name="log" id="login_username" value="" /></p>
+        <input type="text" name="log" id="login_username" value="<?php echo $log; ?>" /></p>
 
         <p><label for="login_password" id="login_password_label">パスワード：</label>
 
-        <input type="password" name="pwd" id="login_password" value="" /></p>
+        <input type="password" name="pwd" id="login_password" value="<?php echo $pwd; ?>" /></p>
+
+<p><input type="checkbox" name="save" id="save" value="on"><label for="save">IDを保存する</label></p>
+
 
         <p><input type="submit" class="fade-black fade" value="ログイン" /></p>
-
     </form>
 
     <?php endif; ?>
@@ -181,7 +202,10 @@ echo $current_user->user_login;
 
 <?php endif ?>
 
+<?php
+  }
 
+?>
 
 </div>
 
@@ -191,13 +215,13 @@ echo $current_user->user_login;
 <?php if (!is_page(134)) {
 
 
- wp_nav_menu(array(
+/* wp_nav_menu(array(
     'container' => 'nav',
     'container_id' => 'global-nav',
     'theme_location' => 'place_global',
     ));
 
-
+*/
 }
 ?>
 

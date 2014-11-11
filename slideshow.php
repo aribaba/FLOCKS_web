@@ -2,6 +2,8 @@
 
 <div id="wrapper">
 
+
+
   <input type="radio" name="slideshow" id="switch1" checked>
   <input type="radio" name="slideshow" id="switch2">
   <input type="radio" name="slideshow" id="switch3">
@@ -63,7 +65,10 @@ $args = array(
                 echo get_the_post_thumbnail($tax_post->ID,'post-thumbnail');
              } ?></a>
         </li>
-        <li class="feature_aritcle_title"><P><?php echo get_the_title($tax_post->ID); ?></p></li>
+        <li class="feature_aritcle_title"><P>
+           <?php  the_field('manga_title',$tax_post->ID); ?>
+        </p></li>
+
         </ul>
     </li>
     <?php endforeach; ?>
@@ -77,9 +82,12 @@ $args = array(
       <section id="slide2">
         <img src="http://aribaba845.sakura.ne.jp/aribaba_book/wp-content/uploads/2014/07/PAK86_pennotekakikomi20140312500-e1404282681261.jpg"
         height="400px" width="740px" target="_blank">
-        <dl>
+        <dl><a href="http://flocks.jp/arichives/2064/" target = "_blank">
           <dt>【急募　◯◯漫画ライター】あなたの好きな漫画を紹介してみませんか？</dt>
-          <dd>暑くなってきました。てか、暑いです。もう本当に暑いです。こーんなに暑いのに、flocksの中のヒトが一発で青ざめる事態に直面しています。そう！ライターが少ない。</dd>
+          <dd>暑くなってきました。てか、暑いです。もう本当に暑いです。こーんなに暑いのに、flocksの中のヒトが一発で青ざめる事態に直面しています。
+            そう！ライターが少ない。  もっとたくさんの人の目線が欲しいんです。主婦の目線、社会人の目線、高校生の目線。
+            BLが好きな人の目線、怪奇モノが好きな人の目線、劇画が好きな人の目線、時代劇が好きな人の目線….
+            もっともっとたくさんのライターに「まだ、みんなに知られてはいない漫画」をオススメしてほしい！「このシーンは鳥肌が立った！」と言ってほしい。カモン！ニューカマー状態です。</dd>
           <dd>
             <ul>
               <li>
@@ -87,7 +95,7 @@ $args = array(
               </li>
             </ul>
           </dd>
-        </dl>
+        </a></dl>
       </section>
       <section id="slide3">
         <img src="http://flocks.jp/wp-content/uploads/2014/07/can_hear_a_sound-.jpg"
@@ -95,7 +103,63 @@ $args = array(
         <dl>
           <dt>マンガなのに”音”が聞こえる？名作多し音楽マンガ撰</dt>
           <dd>"音楽"と"漫画"。音が聞こえるはずもないその組み合わせに、感動を覚えるのはなぜでしょうか。
-            インパクトと心理描写がとくに重要になるこの手の漫画は、ことさら名作が多い気がします。</dd>
+            インパクトと心理描写がとくに重要になるこの手の漫画は、ことさら名作が多い気がします。
+          <dd id="feature_article_archive">
+      <?php
+$args = array(
+'parent'       => 0,
+'hierarchical' => 0,
+'orderby'      => 'term_order', // Category Order and Taxonomy Terms Order を使用
+'order'        => 'ASC'
+);
+    $taxonomy_name = 'feature';
+    $taxonomys = get_terms($taxonomy_name,$args);
+    if(!is_wp_error($taxonomys) && count($taxonomys)):
+        foreach($taxonomys as $taxonomy):
+        $url = get_term_link($taxonomy->slug, $taxonomy_name);
+        $tax_posts = get_posts(array(
+                'post_type' => post,
+                'posts_per_page' => 4, // 表示させたい記事数
+                'tax_query' => array(
+                    array(
+                        'taxonomy'=>'feature',
+                        'terms'=>'can_hear_a_sound',
+                        'field'=>'slug',
+                        'include_children'=>true,
+                        'operator'=>'IN'
+                        ),
+                    'relation' => 'AND'
+                    )
+                ));
+
+
+?>
+
+      <?php if($tax_posts): ?>
+
+<ul class="feature_article_post_ul">
+    <?php foreach($tax_posts as $tax_post): ?>
+    <li class="feature_article_post_li">
+      <ul>
+        <li class="feature_article_thumb">
+          <a href="<?php echo get_permalink($tax_post->ID); ?>" class="fade fade-black">
+            <?php if(has_post_thumbnail($tax_post->ID)) {
+                echo get_the_post_thumbnail($tax_post->ID,'post-thumbnail');
+             } ?></a>
+        </li>
+        <li class="feature_aritcle_title"><P>
+           <?php  the_field('manga_title',$tax_post->ID); ?>
+        </p></li>
+
+        </ul>
+    </li>
+    <?php endforeach; ?>
+</ul>
+<?php endif; endforeach; endif; ?>
+
+          </dd>
+
+</dd>
           <dd></dd>
         </dl>
       </section>
@@ -105,7 +169,7 @@ $args = array(
       </section>
 
          </div>
-    <p class="arrow prev">
+    <!-- <p class="arrow prev">
       <i class="ico"></i>
       <label for="switch1"></label>
       <label for="switch2"></label>
@@ -120,6 +184,6 @@ $args = array(
       <label for="switch3"></label>
       <label for="switch4"></label>
 
-    </p>
+    </p> -->
   </div>
 </div>

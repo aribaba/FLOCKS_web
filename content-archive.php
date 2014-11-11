@@ -60,20 +60,14 @@
 				<?php echo get_post_time('Y/m/d(D)'); ?>
 				</time>
 			</div>
-            <?php
-             if(!is_search()):
-                ?>
+
             <dl class="entry_author_area">
                 <dd class="entry_author_thumbnail">
            <?php echo get_avatar(get_the_author_id(), 30); ?>          </dd>
              <dt class="author-vcard">
-                <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" target=" _blank">
-                <?php the_author_nickname(); ?>
-                </a>
+                <?php the_author_posts_link(get_the_author_id()); ?>
              </dt>
-             <?php
-             endif;
-             ?>
+
 
              </dl>
              <!-- <div id="view-style">

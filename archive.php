@@ -2,9 +2,9 @@
 <?php get_sidebar(); ?>
 <div id="contents-body">
 	<div id="header_rapper">
-	<header id="archive-header" class="<?php if ( is_category() || is_single())
- { ?><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat -> category_nicename; } ?> <?php }
-  ?>">
+	<header id="archive-header" class="<?php if ( is_category() || is_single()){
+		?><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat -> category_nicename; } ?>
+ 	 <?php } ?> normal">
 		<h1 class="page-title" >
 			<?php
 			if(is_author()) :

@@ -32,6 +32,12 @@ body {
 
 }
 
+input[type="submit"] {
+	-webkit-appearance: none;
+}
+
+
+
 #page-body {
 	background: #f8f8f8;
 }
@@ -241,6 +247,7 @@ article:after {
 #not-article {
 	font-size: 20px;
 	font-weight: bold;
+	margin: 30%;
 }
 
 

@@ -4,7 +4,11 @@
 <div id="contents-body">
 
 
-<?php include_once("slideshow.php"); ?>
+<?php
+    echo do_shortcode("[metaslider id=147]");
+?>
+
+
 
 
 <?php

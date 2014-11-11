@@ -8,7 +8,7 @@ Template Name: flocks
 
 <div id="contents-body-flocks">
 
-<img id="about-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png">
+<img id="about-logo" src="http://flocks.jp/wp-content/uploads/2013/11/logo-e1384907740931.png">
 
 </div>
 
@@ -17,7 +17,7 @@ Template Name: flocks
 		<h2>Flocksとは、読みたい漫画が見つかる、マンガおすすめサイトです。</h2>
 		<p>ライターさんがマンガの紹介記事を投稿します。記事は『面白かった』『泣いた』などでは終わりません。</p>
 
-			<p>どんなマンガなのか。何が面白いのか。紹介されているマンガのイメージがつかみやすいような文章構成です。</p>
+			<p>どんなマンガなのか。何が面白いのか。紹介されているマンガのイメージがつかみやすいような文章構成を心がけています。</p>
 	</div>
 </section>
 
@@ -54,7 +54,7 @@ Template Name: flocks
 <section class="section-3 section-all">
 	<div class="centered-wrapper">
 	<p>知らなかったマンガ、気付かなかった鋭い目線。多くのマンガ読みにとって新しい発見があるはずです。</p>
-	<p>マンガ体験を拡張し、一人のモノからみんなのモノへ。マンガをより楽しむ”場”。それがflocksです。</p>
+	<p>マンガ体験を拡張し、一人のモノからみんなのモノへ。マンガをより楽しむ”場”。それがFLOCKSです。</p>
 	</div>
 </section>
 

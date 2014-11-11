@@ -16,6 +16,26 @@ if(is_single()) {
 	<div id="go_writer_page"><a href="http://flocks.jp/writer/" target="_blank" class="fade-black-2 fade">
 		<p>ライター</p>
 	</a></div>
+	<div id="sidebar_search">
+		<?php get_search_form(); ?>
+	</div>
+	<!-- <div id="hidden_tag">
+	<?php
+		$taxonomy = '隠しタグ';
+		$terms = get_terms($taxonomy);
+			foreach ($terms as $term ) {
+					$term = sanitize_term( $term,$taxonomy );
+					$term_link = get_term_link($term, $taxonomy);
+					echo '<div class="hidden_tags_wrap">';
+					echo '<p class="hidden_tags_p">
+					<a href =" ' . esc_url($term_link) . '" target = "_blank" >' . $term->name . ' </a>
+					( ' . $term->count . ')</p>';
+					echo '</div>';
+				} ?>
+
+
+
+	</div> -->
 
 
 	<div id="side-contents">
