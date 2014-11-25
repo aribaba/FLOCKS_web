@@ -95,7 +95,9 @@
         </header>
 
         <div class="entry-content">
+        　<div class="the-text">
             <?php the_content(); ?>
+            </div>
         </div>
 
         <?php 
