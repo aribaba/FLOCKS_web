@@ -65,7 +65,51 @@ function update_profile_fields( $contactmethods ) {
 add_filter('user_contactmethods','update_profile_fields',10,1);
 
 
+function remove_post_metaboxes() {
+    remove_meta_box('postexcerpt', 'post', 'normal'); // 抜粋
+    remove_meta_box('commentstatusdiv', 'post', 'normal'); // コメント設定
+    remove_meta_box('trackbacksdiv', 'post', 'normal'); // トラックバック設定
+    remove_meta_box('revisionsdiv', 'post', 'normal'); // リビジョン表示
+    remove_meta_box('formatdiv', 'post', 'normal'); // フォーマット設定
+    remove_meta_box('slugdiv', 'post', 'normal'); // スラッグ設定
+    remove_meta_box('authordiv', 'post', 'normal'); // 投稿者
+}
+add_action('admin_menu', 'remove_post_metaboxes');
 
+function custom_html_editor() {
+    echo '<style TYPE="text/css">
+    #qt_content_strong,
+    #qt_content_em,
+    #qt_content_link,
+    #qt_content_block,
+    #qt_content_del,
+    #qt_content_ins,
+    #qt_content_img,
+    #qt_content_ul,
+    #qt_content_ol,
+    #qt_content_li,
+    #qt_content_code,
+    #qt_content_more,
+    #qt_content_spell,
+    #qt_content_close,
+    #qt_content_fullscreen
+    {display:none;}
+    </style>';
+}
+add_action('admin_print_styles', 'custom_html_editor', 21);
+
+
+function add_custom_quicktag() {
+?>
+
+<script type="text/javascript">
+    QTags.addButton('ed_strong', '強調する', '<strong>', '</strong>');
+    QTags.addButton('ed_subtitle', 'サブタイトル','<h2>','</h2>');
+    QTags.addButton('ed_summary', '引用','<div class="summary">','</div>');
+</script>
+<?php
+}
+add_action('admin_print_footer_scripts','add_custom_quicktag');
 
 
 //検索ワードが未入力または0の場合にsearch.phpをテンプレートとして使用する
