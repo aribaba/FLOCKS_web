@@ -74,7 +74,7 @@
         get_social_count_twitter("<?php the_permalink(); ?>", "socialarea_twitter_<?php echo $post->ID;?>");
         get_social_count_hatebu("<?php the_permalink(); ?>", "socialarea_hatebu_<?php echo $post->ID;?>");
         </script>
-            <?php reaction_buttons_html() ;?>
+           
         </div>
 
         <li>
