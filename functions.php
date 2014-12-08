@@ -79,7 +79,6 @@ function remove_post_metaboxes() {
     remove_meta_box('ogp__open_graph_pro-hide','post','normal');
     remove_meta_box('post_meta_box-hide','post','normal');
     remove_meta_box('yarpp_relatedposts-hide','post','normal');
-    remove_meta_box('','post','normal');
 
 
 }
@@ -253,5 +252,9 @@ function fix_media_counts($views) {
 
 
 
-
+function image_wrap($html, $id, $caption, $title, $align, $url, $size, $alt){
+    $html = '<div class="imageblock">'."\n".$html."\n".'</div>'."\n";
+    return $html;
+}
+add_filter('image_send_to_editor','image_wrap',10,8);
 
