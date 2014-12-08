@@ -16,6 +16,7 @@
 <!--wrap end-->
 
 
+<!-- Start of Amazon Publisher Studio Loader -->    <script>  window.amznpubstudioTag = "aribaba84500-22";  </script>    <!-- Do not modify the following code ! -->  <script async="true" type="text/javascript" src="http://ps-jp.amazon-adsystem.com/domains/aribaba84500-22_e3b72d81-ce28-4758-8e15-78b818ac3a27.js" charset="UTF-8"></script>    <!-- End of Amazon Publisher Studio Loader -->  
 
 <?php wp_footer(); ?>
 </body>
