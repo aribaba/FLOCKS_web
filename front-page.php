@@ -38,7 +38,7 @@ $count = 1;
 	echo '<div id="front_article_contents">';
 		foreach($categories as $category) :
 			echo '<div class="front_article_archive" id="' . $category -> category_nicename . '" >';
-			query_posts($query_string .  '&' .'posts_per_page=5&cat='. $category -> cat_ID .' &paged='.$paged);
+			query_posts($query_string .  '&' .'posts_per_page=10&cat='. $category -> cat_ID .' &paged='.$paged);
 			if (have_posts()) :
 				while (have_posts()) :
 				the_post();
