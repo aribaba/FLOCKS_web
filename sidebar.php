@@ -1,6 +1,7 @@
 <div id="sidebar">
 
 	<div id="side-category">
+	<h2 class="widget-title">カテゴリー</h2>
 	<ul class="rist-menu" id="list1">
 		<?php
 if(is_single()) {

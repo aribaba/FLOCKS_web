@@ -4,16 +4,14 @@
 <div id="contents-body">
 
 
-<?php
-    echo do_shortcode("[metaslider id=147]");
-?>
+
 
 
 
 
 <?php
 $paged = get_query_var('page');
-$categories = get_categories('child_of=1&orderby=count&order=desc&exclude=295');
+/*$categories = get_categories('child_of=1&orderby=count&order=desc&exclude=295');
 $count = 1;
 		foreach($categories as $category) :
 			if($count == 1){
@@ -49,8 +47,24 @@ $count = 1;
 
 		endforeach;
 	echo '</div>';
-	echo '</div>';
+	echo '</div>';*/
 
+	echo '<div id="front_article_wrapper" class="clear-fix">';
+		echo '<h2 class="front_sub_title">新着記事</h2>';
+	echo '<div id="front_article_contents">';
+
+			echo '<div class="front_article_archive">';
+			query_posts($query_string . '&' .'posts_per_page=20&paged='.$paged);
+			if (have_posts()) :
+				while (have_posts()) :
+				the_post();
+				get_template_part('content-archive');
+			  endwhile;
+			endif;
+			echo '</div>';
+
+	echo '</div>';
+echo '</div>';
 ?>
 
 

@@ -35,7 +35,7 @@ echo ' | ' . sprintf('%sページ',
   max($paged,$page));
   endif;
   ?></title>
-
+<?php wp_enqueue_script('jquery'); ?>
 
 
 <script type="text/javascript">
@@ -74,14 +74,14 @@ window.onload = function(){
 
 
 
-<?php wp_enqueue_script('jquery'); ?>
+
 <?php wp_head(); ?>
 
 
 
 
 
-<script src="<?php bloginfo('template_url'); ?>/js/jquery.easing.plugin.js"></script>
+<!-- <script src="<?php bloginfo('template_url'); ?>/js/jquery.easing.plugin.js"></script> -->
 
 <script src="<?php bloginfo('template_url'); ?>/js/get_social_count.js"></script>
 

@@ -467,3 +467,14 @@ transition: 0.3s ease;
 	transform: rotate(-45deg);
 
 }
+
+.front_sub_title {
+	font-size: 17px;
+	padding: 10px;
+	background: #FFF;
+	border-radius: 8px;
+	margin-bottom: 7px;
+	color: #222;
+
+
+}
